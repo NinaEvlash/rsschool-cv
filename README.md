@@ -1,2 +1,2 @@
 # rsschool-cv
-[cv](https://ninaevlash.github.io/rsschool-cv/cv)
+[cv](https://NinaEvlash.github.io/rsschool-cv/cv)
