@@ -14,3 +14,18 @@ __Skills__
 * JavaScript
 * Version control: Git
 * Figma(for web development)
+
+__Education__
+* Gomel State University named F. Skorina
+ * Faculty of jurisprudence
+* Skillbox
+ * Basic HTML, CSS, JavaScript
+
+ __Experience__
+ * lawyer (2012 - 2023)
+ * little experience in JS and Frontend development
+
+ __Languages__
+ * Russian
+ * Polish (B1)
+ * English (A2)
