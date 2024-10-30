@@ -6,3 +6,11 @@ __My Contact Info__
 * E-mail: [nina.evlash@mail.ru] (https://mail.ru/)
 * GitHub: [NinaEvlash] (https://github.com/)
 * Telegram: [@Nina_Evlash] (https://t.me/Nina_Evlash) 
+
+
+__Skills__
+* HTML
+* CSS
+* JavaScript
+* Version control: Git
+* Figma(for web development)
