@@ -1,0 +1,375 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --grey-color: #666666;
+  --white-color: #ffffff;
+  --greywhite-color: #e9e9e9;
+  --black-color: #000000;
+  --ligtblack-color: #333333;
+  --blue-color: #4682b4;
+  --cold-blue-color: #4f8edc;
+  --white-color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: #f1f1f1;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  justify-content: space-between;
+  position: relative;
+}
+
+.block {
+  margin-top: 38px;
+  justify-content: space-between;
+  padding: 25px;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.section-title {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.section-link {
+  color: var(--blue-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.section-link:hover {
+  color: var(--cold-blue-color);
+}
+
+/*header*/
+
+.header {
+  position: fixed;
+  width: 99%;
+  z-index: 1000;
+  top: 0;
+}
+
+.head-nav {
+  padding: 20px;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: linear-gradient(135deg, #bff1eb 10%, #736efe 80%);
+}
+
+.header-list-item {
+  margin-right: 10px;
+}
+
+.header-list-item:last-child {
+  margin-right: 0;
+}
+
+.header-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--ligtblack-color);
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.3s ease-in-out,
+    border-bottom-color 0.3s ease-in-out;
+}
+
+.header-link:hover {
+  color: var(--white-color);
+  border-bottom-color: var(--white-color);
+}
+
+/*section__left*/
+
+.block__left {
+  margin-right: 50px;
+  flex-direction: column;
+  width: 40%;
+  padding: 10px;
+  border: 1px solid var(--ligtblack-color);
+  background-image: linear-gradient(
+    90deg,
+    rgba(174, 195, 230, 0.84) -2.9%,
+    rgba(138, 175, 230, 0) 65.7%
+  );
+}
+
+.block__left-foto {
+  margin: 40px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px #e5e7eb;
+}
+
+.block__left-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section__contacts {
+  margin-bottom: 20px;
+}
+
+.contacts-item-addres {
+  margin: 0;
+}
+
+.contacts-item {
+  margin-bottom: 5px;
+}
+
+.hvr-underline-from-center:before {
+  background: var(--black-color);
+  height: 1px;
+}
+
+.contacts-ikon {
+  transform: translateY(5px);
+}
+
+.contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.section__education {
+  margin-bottom: 20px;
+}
+
+.education-item,
+.experience-item {
+  margin-bottom: 10px;
+}
+
+.education-item:last-child,
+.experience-item:last-child {
+  margin-bottom: 0;
+}
+
+.education-stady,
+.experience-profession {
+  margin-bottom: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--black-color);
+}
+
+.education-facult {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--grey-color);
+}
+
+.education-data,
+.experience-text,
+.education-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--grey-color);
+}
+
+.experience-text {
+  width: 360px;
+}
+
+.education-link {
+  padding-left: 25px;
+  background-image: url(../img/icons-done.png);
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: left center;
+  color: var(--blue-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.education-link:hover {
+  color: var(--cold-blue-color);
+}
+
+.section__experience {
+  margin-bottom: 20px;
+}
+
+.section__skills {
+  margin-bottom: 20px;
+}
+
+.skill-item {
+  padding-left: 30px;
+  margin-bottom: 3px;
+  background-image: url(../img/icons8-галочка-16.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.skill-item:last-child {
+  margin-bottom: 0;
+}
+
+.language {
+  margin-right: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--black-color);
+}
+
+.language-item {
+  position: relative;
+  padding-left: 30px;
+}
+
+.language-item::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid var(--ligtblack-color);
+  border-radius: 50%;
+}
+
+.step {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--grey-color);
+}
+
+/*section-right*/
+
+.block__right {
+  padding-right: 20px;
+  flex-direction: column;
+  width: 60%;
+  gap: 45px;
+}
+
+.section__name {
+  padding: 93px 0;
+  height: 330px;
+  text-align: center;
+}
+
+.block__right-name {
+  margin: 0;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  color: var(--ligtblack-color);
+  position: relative;
+  display: inline-block;
+}
+
+.block__right-name::after {
+  content: '';
+  position: absolute;
+  background: var(--ligtblack-color);
+  left: 47px;
+  bottom: -20px;
+  width: 180px;
+  height: 1px;
+}
+
+.block__right-prof {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 200%;
+  color: var(--ligtblack-color);
+}
+
+.section__summary-descr,
+.section__code-descr {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 200%;
+  color: var(--black-color);
+}
+
+.section__code-example {
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 2px;
+  background-color: #cae0f3;
+}
+
+.footer__container {
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(135deg, #bff1eb 10%, #736efe 80%);
+}
+
+.footer__copy {
+  font-size: 11px;
+}
+
+.footer__logo-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.social-link:hover {
+  opacity: 0.5;
+}
