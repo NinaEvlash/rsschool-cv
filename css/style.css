@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -51,6 +52,10 @@ body {
 
 .hidden {
   display: none;
+}
+
+.scroll {
+  scroll-margin-top: 60px;
 }
 
 .container {
@@ -159,6 +164,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.block__left__name {
+  display: none;
 }
 
 .section__contacts {
@@ -309,7 +318,8 @@ body {
   text-align: center;
 }
 
-.block__right-name {
+.block__right-name,
+.block__left-name {
   margin: 0;
   letter-spacing: 1px;
   margin-bottom: 40px;
@@ -321,7 +331,8 @@ body {
   display: inline-block;
 }
 
-.block__right-name::after {
+.block__right-name::after,
+.block__left-name::after {
   content: '';
   position: absolute;
   background: var(--ligtblack-color);
@@ -331,7 +342,8 @@ body {
   height: 1px;
 }
 
-.block__right-prof {
+.block__right-prof,
+.block__left-prof {
   margin: 0;
   text-transform: uppercase;
   font-weight: 500;
@@ -350,10 +362,16 @@ body {
 }
 
 .section__code-example {
+  max-width: 100%;
   padding: 20px;
   margin-top: 10px;
   border-radius: 2px;
   background-color: #cae0f3;
+  overflow-x: auto;
+}
+
+.section__code-example pre {
+  margin: 0;
 }
 
 .footer__container {
@@ -379,12 +397,23 @@ body {
   opacity: 0.5;
 }
 
+@media (max-width: 978px) {
+  .block__left-foto {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 @media (max-width: 768px) {
+  .scroll {
+    scroll-margin-top: 0;
+  }
+
   .header__burger {
     display: block;
     position: absolute;
     top: 8px;
-    right: 20px;
+    right: 40px;
     width: 30px;
     height: 20px;
     cursor: pointer;
@@ -461,6 +490,32 @@ body {
     flex-direction: column;
   }
 
+  .section__name {
+    display: none;
+  }
+
+  .block__left-header {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .block__left__name {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .block__left-foto {
+    margin: 0 auto;
+  }
+
+  .block__left-foto {
+    width: 300px;
+    height: 300px;
+  }
+
   .block__left,
   .block__right {
     width: 100%;
@@ -469,5 +524,24 @@ body {
   .block__left {
     margin-right: 0;
     margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 450px) {
+  .block__left-name {
+    font-size: 30px;
+  }
+
+  .block__left-name::after {
+    left: 10px;
+  }
+
+  .block__left-prof {
+    font-size: 15px;
+  }
+
+  .block__left-foto {
+    width: 200px;
+    height: 200px;
   }
 }
