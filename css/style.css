@@ -252,7 +252,8 @@ body {
   color: var(--cold-blue-color);
 }
 
-.section__experience {
+.section__experience,
+.section__projects {
   margin-bottom: 20px;
 }
 
@@ -372,6 +373,36 @@ body {
 
 .section__code-example pre {
   margin: 0;
+}
+
+.projects-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-item {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-link {
+  margin-top: auto;
+}
+
+.project-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--black-color);
+}
+
+.project-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black-color);
 }
 
 .footer__container {
