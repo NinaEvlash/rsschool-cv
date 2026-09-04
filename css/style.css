@@ -556,6 +556,16 @@ body {
     margin-right: 0;
     margin-bottom: 30px;
   }
+
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .project-item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 450px) {
